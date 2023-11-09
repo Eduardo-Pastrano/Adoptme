@@ -10,9 +10,8 @@ import sessionsRouter from './routes/sessions.router.js';
 
 const app = express();
 const PORT = config.port;
-const connection = mongoose.connect(config.mongo_url);
 
-mongoose.connect(mongoURL, {
+mongoose.connect(config.mongo_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
